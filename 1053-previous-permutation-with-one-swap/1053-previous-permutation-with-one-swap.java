@@ -1,10 +1,10 @@
 class Solution {
     public int[] prevPermOpt1(int[] arr) {
-        boolean f = true;
-        for(int i=1;i<arr.length;i++){
-            if(arr[i]<arr[i-1]) f=false;
-        }
-        if(f) return arr;
+        // boolean f = true;
+        // for(int i=1;i<arr.length;i++){
+        //     if(arr[i]<arr[i-1]) f=false;
+        // }
+        // if(f) return arr;
         for(int i=arr.length-2;i>=0;i--){
             if(arr[i]>arr[i+1]){
                 int j=arr.length-1;
